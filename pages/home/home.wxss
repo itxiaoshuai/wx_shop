@@ -40,3 +40,12 @@ page{
   height: 6rpx;  
   background: #f0145a;  
 } 
+
+/* 直接设置swiper属性 */
+swiper {
+  height: 300rpx;
+}
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}

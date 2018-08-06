@@ -7,6 +7,17 @@ Page({
   data: {
     array_home_navbar: ['护肤', '彩妆', '香水', '个人护理'],
     currentTab: 0,
+    imgUrls: [
+      'http:\/\/mz.djmall.xmisp.cn\/files\/banner\/20161219\/148211980641.png',
+      'http:\/\/mz.djmall.xmisp.cn\/files\/banner\/20161222\/148238831285.png',
+      'http:\/\/mz.djmall.xmisp.cn\/files\/banner\/20161222\/14823895573.png'
+    ],
+    indicatorDots: true, //是否显示面板指示点
+    autoplay: true, //是否自动切换
+    interval: 3000, //自动切换时间间隔,3s
+    duration: 1000, //  滑动动画时长1s
+    circular: true //是否采用衔接滑动
+    
   },
   // 导航切换监听
 
