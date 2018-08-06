@@ -1,2 +1,7 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+<!--导航条-->
+
+<view class="navbar">
+  <text wx:for="{{array_home_navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active': ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
