@@ -16,20 +16,55 @@ Page({
     autoplay: true, //是否自动切换
     interval: 3000, //自动切换时间间隔,3s
     duration: 1000, //  滑动动画时长1s
-    circular: true //是否采用衔接滑动
-    
+    circular: true, //是否采用衔接滑动
+
+
+    // navItems
+
+    navItems: [
+      {
+        typeId: 0,
+        name: '品牌馆',
+        url: 'bill',
+        imageurl: '../../images/personal_normal.png',
+      },
+      {
+        typeId: 1,
+        name: '类目',
+        url: 'bill',
+        imageurl: '../../images/personal_normal.png',
+      },
+
+      {
+        typeId: 2,
+        name: '特惠专场',
+        url: 'bill',
+        imageurl: '../../images/personal_normal.png',
+      },
+      {
+        typeId: 3,
+        name: '推荐好友',
+        url: 'bill',
+        imageurl: '../../images/personal_normal.png',
+      }
+
+    ],
+
+
+
+
   },
   // 导航切换监听
 
   navbarTap: function(e) {
-  
+
     console.debug(e.currentTarget.dataset.idx);
- 
+
 
     this.setData({
 
       currentTab: e.currentTarget.dataset.idx
-  
+
     })
 
   },

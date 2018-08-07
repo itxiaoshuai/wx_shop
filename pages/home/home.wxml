@@ -16,3 +16,17 @@
     </swiper-item>
   </block>
 </swiper>
+
+<!-- 分类导航 -->
+  <view class="navs">
+    <block wx:for-items="{{navItems}}" wx:key="name">
+      <view class="nav-item" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <image src="{{item.imageurl}}" class="nav-image" />
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+
+
+
+  
